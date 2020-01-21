@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Var-Well</title>
+
+    <!-- Bootstrap Dropdown Hover CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="../css/animate.min.css" rel="stylesheet">
+    <link href="../css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link href="../css/test.css" rel="stylesheet">
+    <script src="../js/test.js"></script>
+
+    <meta name="author" content="var-well">
+    <meta name="description" content="var-well is great.">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- 오픈 그래프, 트위터에 페이지 주소 넣어야함 -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="var-well">
+    <meta property="og:title" content="Var-Well">
+    <meta property="og:description" content="Var-Well is greattttt!">
+    <meta property="og:image" content="../images/vw_logo_200px.png">
+    <meta property="og:url" content="주소">
+
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:title" content="Var-Well">
+    <meta property="twitter:site" conetent="var-well">
+    <meta property="twitter:description" content="Var-Well is greatttt!">
+    <meta property="twitter:image" content="../images/vw_logo_200px.png">
+    <meta property="twitter:url" content="주소">
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="../images/vw_logo_100px.png">
+    <link rel="apple-touch-icon" href="../images/vw_logo_100px.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/vw_favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+
+</head>
+
+<body>
+<div class="body__container">
+    <!--HEADER-->
+    <header class="section">
+        <div class="container">
+
+            <!-- LOGO -->
+            <div class="menu-group">
+                <div class="logo">
+                    <a href="#">Var-Well</a>
+                </div>
+
+                <!-- 메뉴 링크 달아야 됩니다. -->
+                <ul class="main-menu toggle">
+                    <li><a href="#">소개</a></li>
+                    <li>
+                      <div id="dropdown-item-2" class="dropdown">
+                        <a id="dropdownMenuLink" class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          신청
+                        </a>
+
+                        <div id="dropmenu-2" class="dropdown-menu-design dropdown-menu-layout" aria-labelledby="dropdownMenuLink">
+                          <script>
+                          $("#dropmenu-2").css({"display": "none"})
+                          </script>
+                          <a class="dropdown-item dropdown-item-padding" href="#">신청하기</a>
+                          <a class="dropdown-item dropdown-item-padding" href="#">신청확인</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li><a href="#">QnA</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                </ul>
+            </div>
+
+            <div id="toggle-btn">Toggle Btn</div>
+
+        </div>
+    </header>
+
+
+    <!-- VISUAL -->
+    <section class="section section--visual">
+        <div class="container">
+            <div class="summary__title">
+                Var-Well
+            </div>
+            <div class="summary__description">
+                페이지 간략 설명이 들어갈 부분입니다.
+            </div>
+
+            <div class="btn-group">
+                <ul>
+                    <li><a href="#" class="btn sign-up">회원가입</a></li>
+                    <li><a href="#" class="btn btn--primary sign-in">로그인</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUB -->
+    <section class="section section--sub">
+        <div class="summary float--left">
+            <div class="summary summary__notice">공지사항같은거 적으세요</div>
+            <div class="summary summary__description">
+                <pre> 이 안에 내용을 입력해주세요~~
+                      가나다라마바사아자차카타파하
+                      ABCDE~!~!!#@!$%^^&%*^&^&^$#%#</pre>
+            </div>
+        <div >
+            <a href="#" class="btn btn--primary other">더 보기</a>
+            </div>
+        </div>
+        <div class="image float--right">
+            <img src="../images/vw_logo_color_64px.png" alt="image">
+        </div>
+        <div class="tiles"></div>
+    </section>
+
+    <footer class="section">
+        <div class="container">
+            <ul class="copy-right">
+                <li>team0varwell@gmail.com | Copyright © Var-Well. All Rights Reserved.</li>
+            </ul>
+            <a href="#" class="logo">
+
+            </a>
+        </div>
+    </footer>
+
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>
